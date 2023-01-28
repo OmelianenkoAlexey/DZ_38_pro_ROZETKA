@@ -234,58 +234,6 @@ function renderInfoProducts(arr1, nameProduct) {
 };
 
 
-
-
-// leftImageIphone.addEventListener("click", e => {
-//     console.log("555");
-//     mainNotebook.classList.add("d-none");
-//     mainWatch.classList.add("d-none");
-//     mainIphone.classList.remove("d-none");
-//     rightContainer.classList.add("d-none");
-// });
-// leftImageNotebook.addEventListener("click", e => {
-//     mainIphone.classList.add("d-none");
-//     mainWatch.classList.add("d-none");
-//     mainNotebook.classList.remove("d-none");
-//     rightContainer.classList.add("d-none");
-// });
-// leftImageWatch.addEventListener("click", e => {
-//     mainIphone.classList.add("d-none");
-//     mainNotebook.classList.add("d-none");
-//     mainWatch.classList.remove("d-none");
-//     rightContainer.classList.add("d-none");
-// });
-
-
-// iphone1.addEventListener("click", e => {
-//     rightContainer.classList.remove("d-none");
-//     rightIphone2.classList.add("d-none");
-//     rightIphone3.classList.add("d-none");
-//     rightIphone1.classList.remove("d-none");
-// });
-
-// iphone2.addEventListener("click", e => {
-//     rightContainer.classList.remove("d-none");
-//     rightIphone1.classList.add("d-none");
-//     rightIphone3.classList.add("d-none");
-//     rightIphone2.classList.remove("d-none");
-// });
-
-// iphone3.addEventListener("click", e => {
-//     rightContainer.classList.remove("d-none");
-//     rightIphone1.classList.add("d-none");
-//     rightIphone2.classList.add("d-none");
-//     rightIphone3.classList.remove("d-none");
-// });
-
-
-
-
-
-
-
-
-
 // ! ДЗ 41. Модифікувати програму інтернет - магазин
 
 // Робимо на підставі минулого дз.
