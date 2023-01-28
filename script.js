@@ -192,7 +192,6 @@ function renderInfoProducts(arr1, nameProduct) {
             const rightItem = document.createElement("div");
             right.classList.add("right-item");
 
-
             const rightTitle = document.createElement("p");
             rightTitle.innerText = `${item.name}`;
 
@@ -232,7 +231,7 @@ function renderInfoProducts(arr1, nameProduct) {
         }
         container.append(right);
     })
-}
+};
 
 
 
