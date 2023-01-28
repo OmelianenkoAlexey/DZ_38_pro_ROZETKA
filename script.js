@@ -11,28 +11,6 @@
 // що товар куплений і повернення у вихідний стан програми
 // (коли відображається лише список категорій).
 
-
-// const leftImageIphone = document.querySelector(".left-image__iphone");
-// const leftImageNotebook = document.querySelector(".left-image__notebook");
-// const leftImageWatch = document.querySelector(".left-image__watch");
-
-
-// const mainContainer = document.querySelector(".main-container");
-// const mainIphone = document.querySelector(".main-iphone");
-// const mainNotebook = document.querySelector(".main-notebook");
-// const mainWatch = document.querySelector(".main-watch");
-
-// const iphone1 = document.getElementById("iphone1");
-// const iphone2 = document.getElementById("iphone2");
-// const iphone3 = document.getElementById("iphone3");
-
-
-// const rightContainer = document.querySelector(".right-container");
-// const rightIphone1 = document.querySelector(".right-iphone1");
-// const rightIphone2 = document.querySelector(".right-iphone2");
-// const rightIphone3 = document.querySelector(".right-iphone3");
-
-
 const categories = [
     {
         name: "iphone",
@@ -141,6 +119,8 @@ left.classList.add("left");
 container.append(left);
 document.body.append(container);
 
+let mainSection;
+
 function renderCategories(arr1) {
     arr1.forEach(item => {
         const leftItem = document.createElement("div");
@@ -161,9 +141,6 @@ function renderCategories(arr1) {
     })
 }
 renderCategories(categories);
-
-let mainSection;
-
 
 function renderProducts(arr1, nameCategory) {
 
@@ -194,7 +171,6 @@ function renderProducts(arr1, nameCategory) {
             mainItem.append(mainBox);
 
             mainImage.addEventListener("click", e => {
-                // console.log(item.name);
                 renderInfoProducts(products, item.name)
             })
         }
