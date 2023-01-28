@@ -53,46 +53,82 @@ const products = [
         category: "iphone",
         name: "iphone1",
         image: "images/iphone1.jpg",
+        display: "3.5, сенсорный, 480x320, емкостный, TFT, 16 млн.",
+        cpu: "412 Мгц, граф.процессор",
+        memory: "8 Гб, 128 Мб RAM",
+        battery: "1400 мА*ч Li-Ion, 8 ч разг.(GSM), 24 ч музыки",
     },
     {
         category: "iphone",
-        name: "iphone1",
+        name: "iphone2",
         image: "images/iphone2.jpg",
+        display: "3.5, сенсорный, 480x320, емкостный, TFT, 16 млн.",
+        cpu: "412 Мгц, граф.процессор",
+        memory: "8 Гб, 128 Мб RAM",
+        battery: "1400 мА*ч Li-Ion, 8 ч разг.(GSM), 24 ч музыки",
     },
     {
         category: "iphone",
-        name: "iphone1",
+        name: "iphone3",
         image: "images/iphone3.jpg",
+        display: "3.5, сенсорный, 480x320, емкостный, TFT, 16 млн.",
+        cpu: "412 Мгц, граф.процессор",
+        memory: "8 Гб, 128 Мб RAM",
+        battery: "1400 мА*ч Li-Ion, 8 ч разг.(GSM), 24 ч музыки",
     },
     {
         category: "notebook",
         name: "notebook1",
         image: "images/notebook1.png",
+        display: "3.5, сенсорный, 480x320, емкостный, TFT, 16 млн.",
+        cpu: "412 Мгц, граф.процессор",
+        memory: "8 Гб, 128 Мб RAM",
+        battery: "1400 мА*ч Li-Ion, 8 ч разг.(GSM), 24 ч музыки",
     },
     {
         category: "notebook",
         name: "notebook2",
         image: "images/notebook2.png",
+        display: "3.5, сенсорный, 480x320, емкостный, TFT, 16 млн.",
+        cpu: "412 Мгц, граф.процессор",
+        memory: "8 Гб, 128 Мб RAM",
+        battery: "1400 мА*ч Li-Ion, 8 ч разг.(GSM), 24 ч музыки",
     },
     {
         category: "notebook",
         name: "notebook3",
         image: "images/notebook3.png",
+        display: "3.5, сенсорный, 480x320, емкостный, TFT, 16 млн.",
+        cpu: "412 Мгц, граф.процессор",
+        memory: "8 Гб, 128 Мб RAM",
+        battery: "1400 мА*ч Li-Ion, 8 ч разг.(GSM), 24 ч музыки",
     },
     {
         category: "watch",
         name: "watch1",
         image: "images/watch1.png",
+        display: "3.5, сенсорный, 480x320, емкостный, TFT, 16 млн.",
+        cpu: "412 Мгц, граф.процессор",
+        memory: "8 Гб, 128 Мб RAM",
+        battery: "1400 мА*ч Li-Ion, 8 ч разг.(GSM), 24 ч музыки",
     },
     {
         category: "watch",
         name: "watch2",
         image: "images/watch2.png",
+        display: "3.5, сенсорный, 480x320, емкостный, TFT, 16 млн.",
+        cpu: "412 Мгц, граф.процессор",
+        memory: "8 Гб, 128 Мб RAM",
+        battery: "1400 мА*ч Li-Ion, 8 ч разг.(GSM), 24 ч музыки",
     },
     {
         category: "watch",
         name: "watch3",
         image: "images/watch3.png",
+        display: "3.5, сенсорный, 480x320, емкостный, TFT, 16 млн.",
+        cpu: "412 Мгц, граф.процессор",
+        memory: "8 Гб, 128 Мб RAM",
+        battery: "1400 мА*ч Li-Ion, 8 ч разг.(GSM), 24 ч музыки",
     },
 ];
 
@@ -124,14 +160,10 @@ function renderCategories(arr1) {
         })
     })
 }
-
-
-
 renderCategories(categories);
 
 
 function renderProducts(arr1, nameCategory) {
-
 
     const main = document.createElement("div");
     main.classList.add("main");
@@ -146,6 +178,7 @@ function renderProducts(arr1, nameCategory) {
 
             const mainTitle = document.createElement("div");
             mainTitle.classList.add("main-title");
+            mainTitle.innerText = `${item.name}`;
 
             const mainImage = document.createElement("img");
             mainImage.classList.add("main-image");
@@ -155,18 +188,28 @@ function renderProducts(arr1, nameCategory) {
             mainBox.append(mainTitle);
             mainBox.append(mainImage);
             mainItem.append(mainBox);
-
-
         }
-
     })
-
     main.append(mainItem);
     container.append(main);
-
 }
 
-// renderProducts(products);
+function renderInfoProducts(arr1, nameProduct) {
+
+    const right = document.createElement("div");
+    right.classList.add("right");
+    // const mainItem = document.createElement("div");
+    // mainItem.classList.add("main-item");
+
+    // arr1.forEach(item => {
+    //     if (item.category === nameCategory) {
+
+    //     }
+    // })
+    // main.append(mainItem);
+    // container.append(main);
+}
+
 
 
 
