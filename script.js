@@ -162,6 +162,8 @@ function renderCategories(arr1) {
 }
 renderCategories(categories);
 
+let mainSection;
+
 
 function renderProducts(arr1, nameCategory) {
 
@@ -169,6 +171,8 @@ function renderProducts(arr1, nameCategory) {
     main.classList.add("main");
     const mainItem = document.createElement("div");
     mainItem.classList.add("main-item");
+
+    mainSection = main;
 
     arr1.forEach(item => {
         if (item.category === nameCategory) {
@@ -188,6 +192,11 @@ function renderProducts(arr1, nameCategory) {
             mainBox.append(mainTitle);
             mainBox.append(mainImage);
             mainItem.append(mainBox);
+
+            mainImage.addEventListener("click", e => {
+                // console.log(item.name);
+                renderInfoProducts(products, item.name)
+            })
         }
     })
     main.append(mainItem);
@@ -198,6 +207,63 @@ function renderInfoProducts(arr1, nameProduct) {
 
     const right = document.createElement("div");
     right.classList.add("right");
+
+    arr1.forEach(item => {
+
+        if (item.name === nameProduct) {
+            console.log(item.name);
+
+            const rightItem = document.createElement("div");
+            right.classList.add("right-item");
+
+
+            const rightTitle = document.createElement("p");
+            rightTitle.innerText = `${item.name}`;
+
+            const rightImage = document.createElement("img");
+            rightImage.classList.add("right-image");
+            rightImage.setAttribute("src", `${item.image}`);
+            rightImage.setAttribute("alt", `${item.name}`);
+
+            const rightInfoDisplay = document.createElement("p");
+            rightInfoDisplay.innerText = `${item.display}`;
+            const rightInfoCpu = document.createElement("p");
+            rightInfoCpu.innerText = `${item.cpu}`;
+            const rightInfoMemory = document.createElement("p");
+            rightInfoMemory.innerText = `${item.memory}`;
+            const rightInfoBattery = document.createElement("p");
+            rightInfoBattery.innerText = `${item.battery}`;
+
+            const button = document.createElement("button");
+            button.classList.add("button");
+            button.innerText = "Купить";
+
+            rightItem.append(rightTitle);
+            rightItem.append(rightImage);
+            rightItem.append(rightInfoDisplay);
+            rightItem.append(rightInfoCpu);
+            rightItem.append(rightInfoMemory);
+            rightItem.append(rightInfoBattery);
+            rightItem.append(button);
+
+            right.append(rightItem);
+
+            button.addEventListener("click", e => {
+                right.classList.add("d-none");
+                mainSection.classList.add("d-none");
+                alert("Поздравляю с покупкой!!!");
+
+
+            })
+        }
+
+        container.append(right);
+
+    })
+
+
+
+
     // const mainItem = document.createElement("div");
     // mainItem.classList.add("main-item");
 

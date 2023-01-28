@@ -69,7 +69,7 @@
     align-items: center;
 }
 
-.right-iphone__item {
+.right-item {
     padding: 10px;
     max-width: 300px;
     background-color: red;
@@ -79,15 +79,20 @@
     gap: 10px;
 }
 
-.right-image1,
-.right-image2,
-.right-image3 {
+.right-image {
     width: 80%;
 }
+
+.button {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
 
 .d-none {
     display: none;
 }
+
 
 
 
