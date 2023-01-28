@@ -177,7 +177,7 @@ function renderProducts(arr1, nameCategory) {
     })
     main.append(mainItem);
     container.append(main);
-}
+};
 
 function renderInfoProducts(arr1, nameProduct) {
 
@@ -228,28 +228,10 @@ function renderInfoProducts(arr1, nameProduct) {
                 right.classList.add("d-none");
                 mainSection.classList.add("d-none");
                 alert("Поздравляю с покупкой!!!");
-
-
             })
         }
-
         container.append(right);
-
     })
-
-
-
-
-    // const mainItem = document.createElement("div");
-    // mainItem.classList.add("main-item");
-
-    // arr1.forEach(item => {
-    //     if (item.category === nameCategory) {
-
-    //     }
-    // })
-    // main.append(mainItem);
-    // container.append(main);
 }
 
 
