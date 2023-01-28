@@ -1,0 +1,285 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ! dz38 */
+.container {
+    display: grid;
+    grid-template-areas:
+        "left main right";
+    grid-template-columns: 400px 1fr 1fr;
+}
+
+.left {
+    grid-area: left;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left-image {
+    cursor: pointer;
+    border: 3px solid black;
+    width: 50%;
+}
+
+.main {
+    grid-area: main;
+    background-color: green;
+    padding: 20px;
+}
+
+
+.main-item {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.main-image {
+    border: 3px solid black;
+    cursor: pointer;
+    width: 30%;
+}
+
+
+
+
+.right {
+    padding: 20px;
+    grid-area: right;
+    background-color: blue;
+
+}
+
+.right-container {}
+
+.right-container__iphone {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-iphone1,
+.right-iphone2,
+.right-iphone3 {
+    padding: 10px;
+    max-width: 300px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-image1,
+.right-image2,
+.right-image3 {
+    width: 80%;
+}
+
+.d-none {
+    display: none;
+}
+
+
+
+
+/* ! dz38 ЖЕКА */
+
+
+/* .container {
+    display: flex;
+    gap: 50px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+
+}
+
+.categories-iphone {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.categories-iphone__img {
+    width: 180px;
+}
+
+.categories-mac {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.categories-mac__img {
+    width: 180px;
+}
+
+.categories-watch {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.categories-watch__img {
+    width: 180px;
+}
+
+.product {
+    width: 300px;
+}
+
+.product-iphone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.product-iphone__button2,
+.product-iphone__button3 {
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    color: antiquewhite;
+    font-size: 15px;
+}
+
+.product-iphone__2 {
+    cursor: pointer;
+}
+
+.product-iphone__2-img {
+    width: 80px;
+}
+
+.product-iphone__2-info {}
+
+.product-iphone__3-buy {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: darkgray;
+    width: 200px;
+    padding: 10px;
+    margin-top: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.product-iphone__3 {
+    cursor: pointer;
+}
+
+.product-iphone__3-img {
+    width: 80px;
+}
+
+.product-mac {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-mac__1 {
+    text-align: center;
+}
+
+.product-mac__1-img {
+    width: 150px;
+}
+
+.product-mac__2 {
+    text-align: center;
+}
+
+.product-mac__2-img {
+    width: 180px;
+}
+
+.product-mac__3 {
+    text-align: center;
+}
+
+.product-mac__3-img {
+    width: 150px;
+}
+
+.product-watch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.product-watch__1 {
+    text-align: center;
+}
+
+.product-watch__1-img {
+    width: 150px;
+}
+
+.product-watch__2 {
+    text-align: center;
+}
+
+.product-watch__2-img {
+    width: 150px;
+}
+
+.product-watch__3 {
+    text-align: center;
+}
+
+.product-watch__3-img {
+    width: 150px;
+}
+
+.active {
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: antiquewhite;
+}
+
+.none {
+    display: none;
+}
+
+.iphone {
+    position: absolute;
+    left: 600px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 30px;
+} */
