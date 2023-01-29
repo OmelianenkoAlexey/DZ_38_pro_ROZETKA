@@ -116,12 +116,15 @@ container.classList.add("container");
 const left = document.createElement("div");
 left.classList.add("left");
 
+
+
 container.append(left);
 document.body.append(container);
 
-let mainSection;
+
 
 function renderCategories(arr1) {
+
     arr1.forEach(item => {
         const leftItem = document.createElement("div");
         leftItem.classList.add("left-item");
@@ -135,8 +138,9 @@ function renderCategories(arr1) {
         left.append(leftItem);
 
         leftImage.addEventListener("click", e => {
-
+            console.log(item.name);
             renderProducts(products, item.name);
+
         })
     })
 }
@@ -144,12 +148,17 @@ renderCategories(categories);
 
 function renderProducts(arr1, nameCategory) {
 
+    const deleteRight = document.querySelector(".right");
+    if (deleteRight) deleteRight.remove();
+
+    const deleteMain = document.querySelector(".main");
+    if (deleteMain) deleteMain.remove();
+
     const main = document.createElement("div");
     main.classList.add("main");
     const mainItem = document.createElement("div");
     mainItem.classList.add("main-item");
 
-    mainSection = main;
 
     arr1.forEach(item => {
         if (item.category === nameCategory) {
@@ -171,26 +180,33 @@ function renderProducts(arr1, nameCategory) {
             mainItem.append(mainBox);
 
             mainImage.addEventListener("click", e => {
+
                 renderInfoProducts(products, item.name)
+
             })
         }
     })
     main.append(mainItem);
     container.append(main);
+
 };
+
 
 function renderInfoProducts(arr1, nameProduct) {
 
+    const deleteRight = document.querySelector(".right");
+    if (deleteRight) deleteRight.remove();
+
     const right = document.createElement("div");
     right.classList.add("right");
+    infoOff = right;
 
     arr1.forEach(item => {
 
         if (item.name === nameProduct) {
-            console.log(item.name);
 
             const rightItem = document.createElement("div");
-            right.classList.add("right-item");
+            rightItem.classList.add("right-item");
 
             const rightTitle = document.createElement("p");
             rightTitle.innerText = `${item.name}`;
@@ -224,8 +240,7 @@ function renderInfoProducts(arr1, nameProduct) {
             right.append(rightItem);
 
             button.addEventListener("click", e => {
-                right.classList.add("d-none");
-                mainSection.classList.add("d-none");
+                location.reload();
                 alert("Поздравляю с покупкой!!!");
             })
         }
