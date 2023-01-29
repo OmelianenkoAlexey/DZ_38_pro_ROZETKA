@@ -116,12 +116,8 @@ container.classList.add("container");
 const left = document.createElement("div");
 left.classList.add("left");
 
-
-
 container.append(left);
 document.body.append(container);
-
-
 
 function renderCategories(arr1) {
 
@@ -138,9 +134,7 @@ function renderCategories(arr1) {
         left.append(leftItem);
 
         leftImage.addEventListener("click", e => {
-            console.log(item.name);
             renderProducts(products, item.name);
-
         })
     })
 }
@@ -158,7 +152,6 @@ function renderProducts(arr1, nameCategory) {
     main.classList.add("main");
     const mainItem = document.createElement("div");
     mainItem.classList.add("main-item");
-
 
     arr1.forEach(item => {
         if (item.category === nameCategory) {
@@ -188,9 +181,7 @@ function renderProducts(arr1, nameCategory) {
     })
     main.append(mainItem);
     container.append(main);
-
 };
-
 
 function renderInfoProducts(arr1, nameProduct) {
 
@@ -202,7 +193,6 @@ function renderInfoProducts(arr1, nameProduct) {
     infoOff = right;
 
     arr1.forEach(item => {
-
         if (item.name === nameProduct) {
 
             const rightItem = document.createElement("div");
