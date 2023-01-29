@@ -157,8 +157,64 @@
                 </div>
         </div>
     </div> -->
-    <!-- <button class="button">Купить</button> -->
     <script src="script.js"></script>
+
+    <!-- <form class="form" action="" id="form">
+        <fieldset>
+            <legend>Форма</legend>
+
+            <label for="fullName">ПІБ</label>
+            <input type="text" id="fullName">
+
+            <label for="city">Місто</label>
+            <select name="" id="city">
+                <option class="option" value="Київ">Київ</option>
+                <option class="option" value="Одеса">Одеса</option>
+                <option class="option" value="Днепр">Днепр</option>
+            </select>
+
+            <label for="mailNumber">Склад нової пошти</label>
+            <input type="number" id="mailNumber" placeholder="№ пошти">
+
+            <label for="" id="paymentType">Тип оплати</label>
+
+            <div>
+                <label for="after">Післяплата</label>
+                <input type="radio" id="after" name="paymentType" value="чоловік">
+            </div>
+
+            <div>
+                <label for="before">Оплата банківською карткою</label>
+                <input type="radio" id="before" name="paymentType" value="жінка">
+            </div>
+
+            <label for="productionQuantity">Кількість продукції</label>
+            <input type="number" id="productionQuantity" placeholder="">
+
+            <label for="coment">Коментар</label>
+            <textarea name="" id="coment" cols="30" rows="10" placeholder=""></textarea>
+
+            <button id="button">Зберегти</button>
+        </fieldset>
+    </form> -->
+
+    <div class="modal-container d-none">
+        <div class="modal">
+            <div class="box-title">Ваші введені данні</div>
+            <div class="box-info" id="box-info">
+                <div class="name">Ім'я: <span id="firstNameForm"></span></div>
+                <div class="name">Прізвище: <span id="secondNameForm"></span></div>
+                <div class="name">Дата народження: <span id="dateOfBirthForm"></span></div>
+                <div class="name">Стать: <span id="sexForm"></span></div>
+                <div class="name">Місто: <span id="cityForm"></span></div>
+                <div class="name">Адреса: <span id="addressForm"></span></div>
+                <div class="name">Мова: <span id="langUkForm"></span></div>
+            </div>
+            <button id="add">Зберегти</button>
+            <button id="close">Відмінити</button>
+        </div>
+    </div>
+
 
 </body>
 

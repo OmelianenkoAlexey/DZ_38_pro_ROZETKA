@@ -91,190 +91,71 @@
 
 
 
-/* ! dz38 ЖЕКА */
+/* ! form */
 
 
-/* .container {
-    display: flex;
-    gap: 50px;
-}
+.form {
 
-.categories {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-
-
-}
-
-.categories-iphone {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.categories-iphone__img {
-    width: 180px;
-}
-
-.categories-mac {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.categories-mac__img {
-    width: 180px;
-}
-
-.categories-watch {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.categories-watch__img {
-    width: 180px;
-}
-
-.product {
     width: 300px;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
-.product-iphone {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-
-}
-
-.product-iphone__button2,
-.product-iphone__button3 {
-    background-color: rgb(0, 0, 0);
-    padding: 15px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 50px;
-    color: antiquewhite;
-    font-size: 15px;
-}
-
-.product-iphone__2 {
-    cursor: pointer;
-}
-
-.product-iphone__2-img {
-    width: 80px;
-}
-
-.product-iphone__2-info {}
-
-.product-iphone__3-buy {
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 30px;
-    background-color: darkgray;
-    width: 200px;
+fieldset {
     padding: 10px;
-    margin-top: 40px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.product-iphone__3 {
-    cursor: pointer;
-}
-
-.product-iphone__3-img {
-    width: 80px;
-}
-
-.product-mac {
     display: flex;
-    gap: 30px;
     flex-direction: column;
+    gap: 5px;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.37);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.product-mac__1 {
+.modal {
+    width: 500px;
+    padding: 20px;
+    background-color: rgb(189, 188, 188);
+    border-radius: 10px;
+}
+
+.modal>input,
+.modal>button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid salmon;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.box-title {
+    font-size: 30px;
+    padding-bottom: 10px;
     text-align: center;
 }
 
-.product-mac__1-img {
-    width: 150px;
+.box-info {
+    width: 100%;
+    border: 1px solid salmon;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: white;
 }
 
-.product-mac__2 {
-    text-align: center;
+.modal>button {
+    background-color: salmon;
+    color: white;
 }
-
-.product-mac__2-img {
-    width: 180px;
-}
-
-.product-mac__3 {
-    text-align: center;
-}
-
-.product-mac__3-img {
-    width: 150px;
-}
-
-.product-watch {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.product-watch__1 {
-    text-align: center;
-}
-
-.product-watch__1-img {
-    width: 150px;
-}
-
-.product-watch__2 {
-    text-align: center;
-}
-
-.product-watch__2-img {
-    width: 150px;
-}
-
-.product-watch__3 {
-    text-align: center;
-}
-
-.product-watch__3-img {
-    width: 150px;
-}
-
-.active {
-    border: 1px solid black;
-    border-radius: 50px;
-    background-color: antiquewhite;
-}
-
-.none {
-    display: none;
-}
-
-.iphone {
-    position: absolute;
-    left: 600px;
-    background-color: antiquewhite;
-    border: 1px solid black;
-    border-radius: 50px;
-    padding: 30px;
-} */
